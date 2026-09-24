@@ -6,6 +6,7 @@ Allows a user to play tic-tac-toe on a 5x5 board and return to previous states o
 2. How to run it: What installation and start commands should we use?
 
 npm install 
+
 npm start
 
 3. Your contribution: What did you build or change?
