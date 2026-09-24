@@ -12,8 +12,11 @@ npm start
 3. Your contribution: What did you build or change?
 
 I changed the board from a 3x3 board to a 5x5 board. 
+
 For the current move only, I changed the page to show “You are at move #…” instead of a button.
+
 I rewrote Board to use two loops to make the squares instead of hardcoding them.
+
 The message now says "Draw" if the board is full and no one has won.
 
 4. What you learned: Briefly describe one challenge and how you approached it.
