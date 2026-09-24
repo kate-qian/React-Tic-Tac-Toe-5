@@ -27,7 +27,17 @@ function Board({ xIsNext, squares, onPlay }) {
   if (winner) {
     status = 'Winner: ' + winner;
   } else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    let isFullBoard = true;
+    for (let i = 0; i < 25; i++) {
+      if (squares[i] === null) {
+        isFullBoard = false;
+      }
+    }
+    if (isFullBoard) {
+      status = 'Draw';
+    } else {
+      status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    }
   }
 
   // //hard-coded
